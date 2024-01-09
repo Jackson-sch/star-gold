@@ -1,0 +1,63 @@
+[
+  {
+    "edition": "1",
+    "maxPhotos": "70",
+    "photos": {
+      "photo": [
+        {
+          "id": "1",
+          "name": "1.jpg",
+          "description": "1.jpg",
+          "date": "2017-12-16",
+          "location": "San José, Costa Rica",
+          "photographer": "Mauricio Aguilar",
+          "url": "https://www.dropbox.com/s/1.jpg?dl=1"
+        },
+        {
+          "id": "2",
+          "name": "2.jpg",
+          "description": "2.jpg",
+          "date": "2017-12-16",
+          "location": "San José, Costa Rica",
+          "photographer": "Mauricio Aguilar",
+          "url": "https://www.dropbox.com/s/2.jpg?dl=1"
+        },
+        {
+          "id": "3",
+          "name": "3.jpg",
+          "description": "3.jpg",
+          "date": "2017-12-16",
+          "location": "San José, Costa Rica",
+          "photographer": "Mauricio Aguilar",
+          "url": "https://www.dropbox.com/s/3.jpg?dl=1"
+        },
+        {
+          "id": "4",
+          "name": "4.jpg",
+          "description": "4.jpg",
+          "date": "2017-12-16",
+          "location": "San José, Costa Rica",
+          "photographer": "Mauricio Aguilar",
+          "url": "https://www.dropbox.com/s/4.jpg?dl=1"
+        },
+        {
+          "id": "5",
+          "name": "5.jpg",
+          "description": "5.jpg",
+          "date": "2017-12-16",
+          "location": "San José, Costa Rica",
+          "photographer": "Mauricio Aguilar",
+          "url": "https://www.dropbox.com/s/5.jpg?dl=1"
+        },
+        {
+          "id": "6",
+          "name": "6.jpg",
+          "description": "6.jpg",
+          "date": "2017-12-16",
+          "location": "San José, Costa Rica",
+          "photographer": "Mauricio Aguilar",
+          "url": "https://www.dropbox.com/s/6.jpg?dl=1"
+        },
+    }
+  }
+]

@@ -1,0 +1,52 @@
+---
+import "photoswipe/style.css";
+const { edicion } = Astro.props;
+// Ideally maxPhotos should be taken from the json in public/archivo-page/editions-info.json
+const limit = Object.assign({ "1": { maxPhotos: 27 }, "2": { maxPhotos: 104}})[edicion] ?? {}
+const { maxPhotos = 0 } = limit;
+
+import photo from "../../public/star-gold/galeria.json";
+console.log("🚀 ~ file: Galeria.astro:9 ~ photo:", photo)
+
+
+---
+
+<div class='grid grid-cols-3 max-w-6xl gap-8 mx-auto py-20' id='gallery'>
+  {
+    photo.slice(0, maxPhotos).map((p, i) => (
+      <a
+        class='group rounded-xl hover:scale-105 transition-all relative aspect-square'
+        href={`/star-gold/${edicion}/img-${i + 1}.webp`}
+        target='_blank'
+        data-cropped='true'
+        data-pswp-width={p.photo[0].width}
+        data-pswp-height={p.photo[0].height}
+      >
+        <img
+          class='rounded-xl aspect-square object-cover'
+          loading='lazy'
+          src={`/star-gold/${edicion}/img-${i + 1}.webp`}
+          alt=''
+        />
+        <img
+          class='blur-lg absolute inset-0 transition group-hover:contrast-150 opacity-70 -z-10 object-cover'
+          loading='lazy'
+          src={`/star-gold/${edicion}/img-${i + 1}.webp`}
+          alt=''
+        />
+      </a>
+    ))
+  }
+</div>
+
+<script>
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+  });
+
+  lightbox.init();
+</script>

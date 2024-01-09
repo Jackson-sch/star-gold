@@ -1,0 +1,23 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import HeroContainer from "@/components/HeroContainer.astro";
+
+import Numeros from "../Numeros.astro";
+import Footer from "../Footer.astro";
+import Galeria from "../Galeria.astro";
+---
+
+<Layout title="Archivo" description="Archivo">
+  <HeroContainer img="/archivo-background.webp">
+    <h1 class="text-xl lg:text-6xl uppercase mb-20 font-tomaso tracking-widest">
+      Nuestra Galería
+    </h1>
+
+    <button class="animate-fade-up font-medium text-white no-underline px-5 py-3 border border-solid border-white rounded-full uppercase md:text-sm lg:text-base md:py-2"> REVIVE LA ÚLTIMA GALA</button>
+  </HeroContainer>
+  <main>
+    <Galeria edicion="1" />
+    <Numeros />
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,70 @@
+---
+import Logo from "./Logo.astro";
+---
+
+<header id="header-nav" class="fixed w-full py-2 z-50 top-0 px-6">
+  <div class="flex max-w-7xl mx-auto items-center justify-between">
+    <div class="flex flex-grow basis-0">
+      <a href="/">
+        <img class="h-auto w-18" width={32} src="/star-gold.svg" alt="">
+        <!-- <Logo class="w-10 h-auto" /> -->
+      </a>
+    </div>
+    <!-- Menu navegacion para  pantallas grandes -->
+    <nav
+      class="hidden md:flex flex-grow basis-0 w-full gap-x-6 text-lg md:justify-center font-medium"
+    >
+      <a href="/info" class="hover:underline">Info</a>
+      <a href="/archivo" class="hover:underline">Archivo</a>
+    </nav>
+
+    <!-- Menu hamburguesa para pantallas pequeñas -->
+    <button
+      id="menu-toggle"
+      class="flex flex-grow basis-0 justify-end text-2xl md:hidden z-50"
+    >
+      <span id="menu-icon">☰</span>
+    </button>
+
+    <div
+      class="hidden md:flex-grow md:basis-0 justify-end whitespace-nowrap md:flex md:text-base"
+    >
+      <button
+        class="animate-fade-up font-medium text-white no-underline px-5 py-3 border border-solid border-white rounded-full uppercase md:text-sm lg:text-base md:py-2"
+      >
+        DL 360: CAPTURA TUS MOMENTOS
+      </button>
+    </div>
+  </div>
+
+  <!-- Menu hamburguesa para pantallas pequeñas -->
+  <nav
+    id="mobile-menu"
+    class="bg-black/80 backdrop-blur-3xl hidden w-full flex-col items-center text-center text-2xl fixed top-0 left-0 right-0 h-dvh place-content-center"
+  >
+    <a href="/" class="my-4 hover:underline"> Inicio</a>
+    <a href="/info" class="my-4 hoverhover:underline">Info</a>
+    <a href="/archivo" class="my-4 hoverhover:underline">Archivo</a>
+    <button
+      class="my-4 whitespace-nowrap text-center animate-fade-up font-medium text-white no-underline px-5 py-3 border border-solid border-white rounded-full uppercase lg:hidden lg:text-base"
+    >
+      DL 360: CAPTURA TUS MOMENTOS
+    </button>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuIcon = document.getElementById("menu-icon");
+
+    if (!menuToggle || !mobileMenu || !menuIcon) return;
+
+    menuToggle.addEventListener("click", function () {
+      mobileMenu.classList.toggle("hidden");
+      menuIcon.classList.toggle("hidden");
+      menuIcon.textContent = menuIcon.textContent === "☰" ? "✕" : "☰";
+    });
+  });
+</script>

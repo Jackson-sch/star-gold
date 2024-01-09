@@ -1,0 +1,53 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="404" description="404">
+  <div
+    class="min-h-screen flex flex-col items-center justify-center text-white"
+  >
+    <img
+      src="/404-blanco.svg"
+      alt="404"
+      width={500}
+      class="mb-16 top-0 object-cover"
+    />
+    <h1 class="text-9xl font-bold ">
+      <span>4</span><span>0</span><span>4</span>
+    </h1>
+    <p class="text-xl mt-2">¡Ups!, algo se rompió.</p>
+    <p>Esa página no existe.</p>
+    <a
+      class="mt-8 inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-slate-900 hover:bg-slate-950"
+      href="/"
+    >
+      Regresar al inicio
+    </a>
+  </div>
+  <video
+    class="cp-v absolute w-full h-full object-cover object-top animate-ease-in-out animate-fade animation-duration-1000"
+    src="/videos/star-gold/orla.mp4"
+    autoplay
+    loop
+    muted
+    style="clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+    "
+  >
+</Layout>
+
+<style>
+    @font-face {
+    font-family: "Jura";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/jura.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+      U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  h1 {
+    text-shadow: 0px 5px 10px rgba(197, 255, 255, 0.5);
+  }
+</style>

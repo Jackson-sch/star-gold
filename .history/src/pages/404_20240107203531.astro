@@ -1,0 +1,33 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="404" description="404">
+  <div
+    class="min-h-screen bg-slate-900 flex flex-col items-center justify-center text-white"
+  >
+    <img
+      src="/404-blanco.svg"
+      alt="404"
+      width={500}
+      class="mb-16 top-0 object-cover"
+    />
+    <h1 class="text-9xl font-bold">
+      <span>4</span><span>0</span><span>4</span>
+    </h1>
+    <p class="text-xl mt-2">¡Ups!, algo se rompió.</p>
+    <p>Esa página no existe.</p>
+    <a
+      class="mt-8 inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-yello-500 hover:bg-gray-100"
+      href="#"
+    >
+      Regresar al inicio
+    </a>
+  </div>
+</Layout>
+
+<style>
+  h1 {
+    text-shadow: 0px 5px 10px rgba(197, 255, 255, 0.5);
+  }
+</style>

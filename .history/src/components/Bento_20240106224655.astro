@@ -1,0 +1,70 @@
+---
+import BentoItem from "./BentoItem.astro";
+---
+
+<section
+  class="w-full max-w-[1400px] grid lg:grid-cols-10 auto-rows-[30rem] gap-4 mx-auto p-6 md:p-12 lg:p-20"
+>
+  <BentoItem
+    class="col-span-10 md:col-span-4"
+    title="Homenaje a Manuel Orlando Espinola Sanchez"
+  >
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+      -z-10 h-full w-full bg-blue-950
+      bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/star-gold/ceremonia.webp')"
+    >
+    </div>
+    <p slot="content" class="text-base md:text-lg max-w-xl">
+      Celebramos a nuestro Personal Trainer y miembro destacado del cuerpo técnico de la <strong>Selección Nacional de Levantamiento de Pesas</strong>. Su contribución ha llevado al equipo a obtener <strong>medallas de oro, plata y bronce en los campeonatos Sur, Centro Americano y del Caribe</strong>.
+    </p>
+  </BentoItem>
+  <BentoItem
+    class="col-span-10 md:col-span-6"
+    title="LA ALFOMBRA BLANCA"
+    subtitle="16 de febrero de 2024"
+  >
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 h-full w-full group-hover:scale-110 duration-1000 ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-900 -z-10"
+      style="background-image: url('/image/pistas.webp')"
+    >
+    </div>
+    <p slot="content" class="text-base md:text-lg max-w-xl">
+      Este año, el momento de la alfombra azul será sustituido y mejorado,
+      gracias a los increíbles paisajes andorranos, por una <strong
+        >alfombra blanca en plena nieve,</strong
+      > situada en las <strong>pistas de esquí de Andorra.</strong>
+    </p>
+  </BentoItem>
+  <BentoItem
+    class="col-span-10 md:col-span-6"
+    title="1° Campeonato Interno Levantamiento de Pesas"
+  >
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 h-full w-full group-hover:scale-110 duration-1000 ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-900 -z-10"
+      style="background-image: url('/star-gold/levantamiento-pesas.webp')"
+    >
+    </div>
+    <p slot="content" class="text-base md:text-lg max-w-xl">
+      Un evento emocionante que celebra <strong>la fuerza, la dedicación y el espíritu competitivo</strong>. Este evento reúne a nuestros miembros para <strong>competir, aprender y crecer juntos</strong> en el deporte del <strong>levantamiento de pesas</strong>.
+    </p>
+  </BentoItem>
+  <BentoItem
+    class="col-span-10 md:col-span-4"
+    title="Nuestro 1er aniversario"
+  >
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 h-full w-full group-hover:scale-110 duration-1000 ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+      style="background-image: url('/star-gold/1-aniversario.webp')"
+    >
+    </div>
+    <p slot="content" class="text-base md:text-lg max-w-xl">
+      Un evento emocionante que celebra <strong>la fuerza, la dedicación y el espíritu competitivo</strong>. Este evento reúne a nuestros miembros para <strong>competir, aprender y crecer juntos</strong> en el deporte del <strong>levantamiento de pesas</strong>.
+    </p>
+  </BentoItem>
+</section>
