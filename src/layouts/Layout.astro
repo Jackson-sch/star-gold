@@ -1,5 +1,4 @@
 ---
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ViewTransitions } from "astro:transitions";
 import Header from "../components/Header.astro";
 import "@fontsource-variable/onest";
@@ -35,7 +34,6 @@ const { description, title } = Astro.props;
   <body>
     <Header />
     <slot />
-    <SpeedInsights />
     <style is:global>
       :root {
         color-scheme: dark;
